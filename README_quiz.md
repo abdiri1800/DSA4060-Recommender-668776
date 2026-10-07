@@ -24,14 +24,19 @@
 - Keep `movies.csv`, `ratings.csv` and the notebook in the same folder.
 - Set `STUDENT_ID` in the first code cell, then run all cells from top to bottom (Kernel > Restart & Run All).
 
-## Recommendation Results
+## Recommendation Results (these ones are not distinct)
 1. Most similar to 'The Pursuit of Happyness' (rated 5.0); shares genre(s): Biography, Drama. Matches liked genres: Biography, Drama (similarity score 0.70).
 2. Most similar to 'Remember the Titans' (rated 5.0); shares genre(s): Drama. Matches liked genres: Drama (similarity score 0.50).
 3. Most similar to 'Remember the Titans' (rated 5.0); shares genre(s): Drama. Matches liked genres: Drama (similarity score 0.50).
 4. Most similar to 'Remember the Titans' (rated 5.0); shares genre(s): Drama. Matches liked genres: Drama (similarity score 0.50).
 5. Most similar to 'Remember the Titans' (rated 5.0); shares genre(s): Drama. Matches liked genres: Drama (similarity score 0.50).
 
-
+## Recommendation Results (these ones are  distinct)
+1. Shares Biography, Drama with liked movies 'The Pursuit of Happyness' (5.0) and 'The Social Network' (4.0) (score 0.70). Ranked above others with the same score by community avg rating 3.47
+2. Shares Drama with liked movies 'Remember the Titans' (5.0) and 'Ford v Ferrari' (5.0) (score 0.50). Also adds Comedy, which is new to this user's liked list. Ranked above others with the same score by community avg rating 3.31
+3. Shares Drama with liked movies 'Remember the Titans' (5.0) and 'Ford v Ferrari' (5.0) (score 0.50). Also adds Sci-Fi, which is new to this user's liked list. Ranked above others with the same score by community avg rating 3.24.
+4. Shares Drama with liked movies 'Remember the Titans' (5.0) and 'Ford v Ferrari' (5.0) (score 0.50). Also adds Sci-Fi, which is new to this user's liked list. Ranked above others with the same score by community avg rating 3.23
+5. Shares Drama with liked movies 'Remember the Titans' (5.0) and 'Ford v Ferrari' (5.0) (score 0.50). Also adds Sci-Fi, which is new to this user's liked list. Ranked above others with the same score by community avg rating 3.15.
 
 ## Limitation and Suggested Improvement
 - **Limitation:** The recommender depends only on genre labels, so movies that share one broad genre look equally similar. I mean In my results, four of the five recommendations tied at a similarity score of 0.50 because they only shared "Drama" with Remember the Titans, even though they differ a lot in style and theme. The user's small number of ratings also makes the profile weak
